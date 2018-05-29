@@ -1,0 +1,61 @@
+[
+ {
+    "name": "Stats__TS_Stats",
+    "label": "Stats/Statistics On Ts",
+    "description": "Set of functions about statistics features on Timeseries"
+ },
+ {
+   "family": "Stats__TS_Stats",
+    "name": "TS_Quality_indicators",
+    "label": "Quality indicators",
+   "description": "The Quality statistics computes the statistics features over a TS list."
+ },
+ {
+    "name": "quality_stats",
+    "label": "Quality Indicators",
+    "description": "This implementation uses spark to computes statistics",
+    "algorithm": "quality_indicators",
+    "entry_point": "ikats.algo.core.quality_stats::calc_quality_stats",
+    "inputs": [
+      {
+        "name": "ts_list",
+        "label": "TS list",
+        "description": "Timeseries references to use",
+        "type": "ts_list"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "compute_value",
+        "label": "'Value' metadata",
+        "description": "Compute Metadata related to 'value' information (min, max, avg, variance, nb points)",
+        "type": "bool",
+        "domain": null,
+        "default_value": true
+      },
+      {
+        "name": "compute_time",
+        "label": "'Time' metadata",
+        "description": "Compute Metadata related to 'time' information (average, min, max, ref periods, histograms)",
+        "type": "bool",
+        "domain": null,
+        "default_value": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "tslist",
+        "label": "TS",
+        "description": "List of input TS (to pipe)",
+        "type": "ts_list"
+      },
+      {
+        "name": "list",
+        "label": "MD",
+        "description": "Meta data computed",
+        "type": "md_list"
+      }
+    ]
+ }
+
+]
