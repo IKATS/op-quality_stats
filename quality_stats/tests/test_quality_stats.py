@@ -22,9 +22,9 @@ import time
 import logging
 import numpy as np
 
-from ikats.algo.op-quality_stats.quality_stats import calc_quality_stats
+from ikats.algo.quality_stats.quality_stats import calc_quality_stats
 from ikats.core.resource.api import IkatsApi
-from ikats.algo.op-quality_stats.quality_stats_calculators import LOGGER as LOGGER_QUALITY_STATS
+from ikats.algo.quality_stats.quality_stats_calculators import LOGGER as LOGGER_QUALITY_STATS
 
 
 def log_to_stdout(logger_to_use):
