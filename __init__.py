@@ -15,6 +15,6 @@ limitations under the License.
 
 """
 from pkgutil import extend_path
-from ikats.algo.core.quality_stats.quality_stats import *
-from ikats.algo.core.quality_stats.quality_stats_calculators import *
+from ikats.algo.op-quality_stats.quality_stats import *
+from ikats.algo.op-quality_stats.quality_stats_calculators import *
 __path__ = extend_path(__path__, __name__)
