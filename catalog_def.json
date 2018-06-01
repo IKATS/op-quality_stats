@@ -45,7 +45,7 @@
     "outputs": [
       {
         "name": "tslist",
-        "label": "TS",
+        "label": "TS list",
         "description": "List of input TS (to pipe)",
         "type": "ts_list"
       },
