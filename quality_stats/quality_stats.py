@@ -16,7 +16,7 @@ limitations under the License.
 """
 
 from math import ceil
-from ikats.algo.core.quality_stats.quality_stats_calculators import \
+from ikats.algo.quality_stats.quality_stats_calculators import \
     calc_qual_stats_value, calc_qual_stats_time, LOGGER
 from ikats.core.library.exception import IkatsException
 from ikats.core.library.spark import ScManager

@@ -15,7 +15,7 @@
     "label": "Quality Indicators",
     "description": "This implementation uses spark to computes statistics",
     "algorithm": "quality_indicators",
-    "entry_point": "ikats.algo.core.quality_stats::calc_quality_stats",
+    "entry_point": "op-quality_stats::calc_quality_stats",
     "inputs": [
       {
         "name": "ts_list",
@@ -45,7 +45,7 @@
     "outputs": [
       {
         "name": "tslist",
-        "label": "TS",
+        "label": "TS list",
         "description": "List of input TS (to pipe)",
         "type": "ts_list"
       },
