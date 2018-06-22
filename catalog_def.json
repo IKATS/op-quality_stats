@@ -3,7 +3,7 @@
   "label": "Quality Indicators",
   "description": "This implementation uses spark to computes statistics",
   "family": "Stats__TS_Stats",
-  "entry_point": "op-quality_stats::calc_quality_stats",
+  "entry_point": "quality_stats.quality_stats::calc_quality_stats",
   "inputs": [
     {
       "name": "ts_list",
